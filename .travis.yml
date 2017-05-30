@@ -1,10 +1,9 @@
 sudo: required
-language: cpp
+language: c
 os:
   - linux
 compiler: 
-  - clang
-  - g++
+  - gcc
 
 before_install:
   - sudo apt-get install libssl-dev
