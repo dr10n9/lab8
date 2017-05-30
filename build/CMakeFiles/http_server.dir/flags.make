@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -Werror -Wall
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dr10n9/lab8/http_server/include 
+CXX_INCLUDES = -I/home/dr10n9/lab8/lab8/include 
 

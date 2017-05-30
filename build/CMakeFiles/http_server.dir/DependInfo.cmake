@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dr10n9/lab8/http_server/main.cpp" "/home/dr10n9/lab8/http_server/build/CMakeFiles/http_server.dir/main.cpp.o"
-  "/home/dr10n9/lab8/http_server/src/http_server.cpp" "/home/dr10n9/lab8/http_server/build/CMakeFiles/http_server.dir/src/http_server.cpp.o"
-  "/home/dr10n9/lab8/http_server/src/request.cpp" "/home/dr10n9/lab8/http_server/build/CMakeFiles/http_server.dir/src/request.cpp.o"
-  "/home/dr10n9/lab8/http_server/src/website.cpp" "/home/dr10n9/lab8/http_server/build/CMakeFiles/http_server.dir/src/website.cpp.o"
+  "/home/dr10n9/lab8/lab8/main.cpp" "/home/dr10n9/lab8/lab8/build/CMakeFiles/http_server.dir/main.cpp.o"
+  "/home/dr10n9/lab8/lab8/src/http_server.cpp" "/home/dr10n9/lab8/lab8/build/CMakeFiles/http_server.dir/src/http_server.cpp.o"
+  "/home/dr10n9/lab8/lab8/src/request.cpp" "/home/dr10n9/lab8/lab8/build/CMakeFiles/http_server.dir/src/request.cpp.o"
+  "/home/dr10n9/lab8/lab8/src/website.cpp" "/home/dr10n9/lab8/lab8/build/CMakeFiles/http_server.dir/src/website.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dr10n9/lab8/http_server
+CMAKE_SOURCE_DIR = /home/dr10n9/lab8/lab8
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dr10n9/lab8/http_server/build
+CMAKE_BINARY_DIR = /home/dr10n9/lab8/lab8/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/http_server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/http_server.dir/flags.make
 
 CMakeFiles/http_server.dir/main.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/http_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/http_server.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/main.cpp.o -c /home/dr10n9/lab8/http_server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/http_server.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/main.cpp.o -c /home/dr10n9/lab8/lab8/main.cpp
 
 CMakeFiles/http_server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/http_server/main.cpp > CMakeFiles/http_server.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/lab8/main.cpp > CMakeFiles/http_server.dir/main.cpp.i
 
 CMakeFiles/http_server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/http_server/main.cpp -o CMakeFiles/http_server.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/lab8/main.cpp -o CMakeFiles/http_server.dir/main.cpp.s
 
 CMakeFiles/http_server.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/http_server.dir/main.cpp.o.provides.build: CMakeFiles/http_server.dir
 
 CMakeFiles/http_server.dir/src/http_server.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/http_server.cpp.o: ../src/http_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/http_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server.dir/src/http_server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/http_server.cpp.o -c /home/dr10n9/lab8/http_server/src/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server.dir/src/http_server.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/http_server.cpp.o -c /home/dr10n9/lab8/lab8/src/http_server.cpp
 
 CMakeFiles/http_server.dir/src/http_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/http_server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/http_server/src/http_server.cpp > CMakeFiles/http_server.dir/src/http_server.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/lab8/src/http_server.cpp > CMakeFiles/http_server.dir/src/http_server.cpp.i
 
 CMakeFiles/http_server.dir/src/http_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/http_server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/http_server/src/http_server.cpp -o CMakeFiles/http_server.dir/src/http_server.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/lab8/src/http_server.cpp -o CMakeFiles/http_server.dir/src/http_server.cpp.s
 
 CMakeFiles/http_server.dir/src/http_server.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/http_server.dir/src/http_server.cpp.o.provides.build: CMakeFiles/http
 
 CMakeFiles/http_server.dir/src/request.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/request.cpp.o: ../src/request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/http_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server.dir/src/request.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/request.cpp.o -c /home/dr10n9/lab8/http_server/src/request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server.dir/src/request.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/request.cpp.o -c /home/dr10n9/lab8/lab8/src/request.cpp
 
 CMakeFiles/http_server.dir/src/request.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/request.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/http_server/src/request.cpp > CMakeFiles/http_server.dir/src/request.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/lab8/src/request.cpp > CMakeFiles/http_server.dir/src/request.cpp.i
 
 CMakeFiles/http_server.dir/src/request.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/request.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/http_server/src/request.cpp -o CMakeFiles/http_server.dir/src/request.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/lab8/src/request.cpp -o CMakeFiles/http_server.dir/src/request.cpp.s
 
 CMakeFiles/http_server.dir/src/request.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/http_server.dir/src/request.cpp.o.provides.build: CMakeFiles/http_ser
 
 CMakeFiles/http_server.dir/src/website.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/website.cpp.o: ../src/website.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/http_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/http_server.dir/src/website.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/website.cpp.o -c /home/dr10n9/lab8/http_server/src/website.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dr10n9/lab8/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/http_server.dir/src/website.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_server.dir/src/website.cpp.o -c /home/dr10n9/lab8/lab8/src/website.cpp
 
 CMakeFiles/http_server.dir/src/website.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/website.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/http_server/src/website.cpp > CMakeFiles/http_server.dir/src/website.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dr10n9/lab8/lab8/src/website.cpp > CMakeFiles/http_server.dir/src/website.cpp.i
 
 CMakeFiles/http_server.dir/src/website.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/website.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/http_server/src/website.cpp -o CMakeFiles/http_server.dir/src/website.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dr10n9/lab8/lab8/src/website.cpp -o CMakeFiles/http_server.dir/src/website.cpp.s
 
 CMakeFiles/http_server.dir/src/website.cpp.o.requires:
 
@@ -169,7 +169,7 @@ http_server: CMakeFiles/http_server.dir/src/request.cpp.o
 http_server: CMakeFiles/http_server.dir/src/website.cpp.o
 http_server: CMakeFiles/http_server.dir/build.make
 http_server: CMakeFiles/http_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dr10n9/lab8/http_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable http_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dr10n9/lab8/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable http_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/http_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/http_server.dir/clean:
 .PHONY : CMakeFiles/http_server.dir/clean
 
 CMakeFiles/http_server.dir/depend:
-	cd /home/dr10n9/lab8/http_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dr10n9/lab8/http_server /home/dr10n9/lab8/http_server /home/dr10n9/lab8/http_server/build /home/dr10n9/lab8/http_server/build /home/dr10n9/lab8/http_server/build/CMakeFiles/http_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dr10n9/lab8/lab8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dr10n9/lab8/lab8 /home/dr10n9/lab8/lab8 /home/dr10n9/lab8/lab8/build /home/dr10n9/lab8/lab8/build /home/dr10n9/lab8/lab8/build/CMakeFiles/http_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/http_server.dir/depend
 
