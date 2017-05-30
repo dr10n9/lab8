@@ -1,0 +1,4 @@
+PROJECT_NAME           = "Project Name Here"
+EXTRACT_ALL            = NO
+FILE_PATTERNS          = *.c *.cpp *.h
+RECURSIVE              = YES
