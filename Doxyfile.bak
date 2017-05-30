@@ -1,4 +1,4 @@
-PROJECT_NAME           = "Project Name Here"
+PROJECT_NAME           = "lab 8 "
 EXTRACT_ALL            = NO
 FILE_PATTERNS          = *.c *.cpp *.h
 RECURSIVE              = YES

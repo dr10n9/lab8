@@ -1,7 +1,7 @@
 #ifndef HTTP_SERVER_H
 #define HTTP_SERVER_H
 /**
-	@file http_server.h
+	@file 
 	@brief here is header for simple http server
 */
 #include <iostream>

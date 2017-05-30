@@ -1,5 +1,5 @@
 # http_server
-simple c++ http server
+lab 8 
 
 [![Travis-CI][travis-badge]][travis-builds]
 

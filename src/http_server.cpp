@@ -16,12 +16,12 @@ const string filePath = "/home/dr10n9/lab8/http_server/data/data.txt";
 
 
 /**
-    @brif http_server constructor
+    @brief http_server constructor
 */
 void http_server(void) {
     vector<webSite*> sites;
     fillSites(sites);
-    const int serverPort = 8082;
+    const int serverPort = 8083;
     TcpListener tcpListener;
     NetMessage message(2048);
     try {
@@ -46,7 +46,9 @@ void http_server(void) {
         delete sites[i];
     }
 }
+/**
 
+*/
 string createResponse(string message, vector<webSite*> sites) {
     Request request;
     string msg;
@@ -97,7 +99,7 @@ string createResponse(string message, vector<webSite*> sites) {
 
 string serverInformation(void) {
     json_t * json = json_object();
-    json_object_set_new(json, "title", json_string("WebServer"));
+    json_object_set_new(json, "title", json_string("lab8 server"));
     json_object_set_new(json, "developer",json_string("Andrew"));
     time_t seconds = time(NULL);
     tm* timeinfo = localtime(&seconds);
@@ -198,21 +200,34 @@ string fileNumbers() {
         count++;
         index = str.find_first_of("-.1234567890",index+1);
     }
-    json_t * array = json_array();
+    // json_t * array = json_array();
+    // int numberCount = 0;
+    // for (int i = 0; i < (int)numbers.size(); i++) {
+    //     numberCount++;
+    //     if (numberCount % 2 == 1) {
+    //         json_t * json = json_object();
+    //         json_object_set_new(json, "number", json_integer(numbers[i]));
+    //         // json_object_set_new(json, "number", json_real(numbers[i]));
+    //         json_object_set_new(json, "count",json_integer(numberCount));
+    //         json_array_append(array, json);
+    //         json_decref(json);
+    //     }
+    // }
+    // if (numberCount == 0) return "File dont have numbers";
+    double middle=0.0;
     int numberCount = 0;
-    for (int i = 0; i < (int)numbers.size(); i++) {
+    for(int i=0; i<(int)numbers.size(); i++){
+        middle+=numbers[i];
         numberCount++;
-        if (numberCount % 2 == 1) {
-            json_t * json = json_object();
-            json_object_set_new(json, "number", json_integer(numbers[i]));
-            // json_object_set_new(json, "number", json_real(numbers[i]));
-            json_object_set_new(json, "count",json_integer(numberCount));
-            json_array_append(array, json);
-            json_decref(json);
-        }
     }
-    if (numberCount == 0) return "File dont have numbers";
-    char * jsonString = json_dumps(array, JSON_INDENT(2) | JSON_PRESERVE_ORDER);
+
+    middle=middle/numberCount;
+
+    json_t * json = json_object();
+    json_object_set_new(json, "count", json_integer(numberCount));
+    json_object_set_new(json, "middle", json_real(middle));
+
+    char * jsonString = json_dumps(json, JSON_INDENT(2) | JSON_PRESERVE_ORDER);
     string toReturn(jsonString);
     free(jsonString);
 //    json_decref(array);

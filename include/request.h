@@ -2,7 +2,10 @@
 #define REQUEST_H
 
 #include <iostream>
-
+/** 
+    @file
+    @brief request header, here are declaring of functions which will parse requests
+*/
 using namespace std;
 
 class Request {
