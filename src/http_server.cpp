@@ -140,10 +140,6 @@ string keySites(std::vector<webSite*> sites, std::string key, std::string value)
         if (sites[i]->getField(key) == value) {
             check = true;
             json_t * json = json_object();
-            // json_object_set_new(json, "Name", json_string(sites[i]->getName().c_str()));
-            // json_object_set_new(json, "surname", json_string(sites[i]->getSurname().c_str()));
-            // json_object_set_new(json, "age", json_real(sites[i]->getAge()));
-            // json_object_set_new(json, "id", json_integer(sites[i]->getId()));
             json_object_set_new(json, "name", json_string(sites[i]->getSiteName().c_str()));
             json_object_set_new(json, "link", json_string(sites[i]->getMainLink().c_str()));
             json_object_set_new(json, "id", json_integer(sites[i]->getId()));            
@@ -200,20 +196,6 @@ string fileNumbers() {
         count++;
         index = str.find_first_of("-.1234567890",index+1);
     }
-    // json_t * array = json_array();
-    // int numberCount = 0;
-    // for (int i = 0; i < (int)numbers.size(); i++) {
-    //     numberCount++;
-    //     if (numberCount % 2 == 1) {
-    //         json_t * json = json_object();
-    //         json_object_set_new(json, "number", json_integer(numbers[i]));
-    //         // json_object_set_new(json, "number", json_real(numbers[i]));
-    //         json_object_set_new(json, "count",json_integer(numberCount));
-    //         json_array_append(array, json);
-    //         json_decref(json);
-    //     }
-    // }
-    // if (numberCount == 0) return "File dont have numbers";
     double middle=0.0;
     int numberCount = 0;
     for(int i=0; i<(int)numbers.size(); i++){
